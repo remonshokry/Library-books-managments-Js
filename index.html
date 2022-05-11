@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="numberOfBooks.css">
+    <link rel="stylesheet" href="form.css">
+    <link rel="stylesheet" href="dataTable.css">
+</head>
+<body>
+    <div class="bg"></div>
+    <div class="number-of-books">
+        <div class="number-of-books-container">
+            <div class="text-input">
+                <div class="text">How Many Books?</div>
+                <div class="input-validation">
+                    <input type="text" name="numberOfBooks" class = 'number-input' >
+                    <span class = 'validation'></span>
+                </div>
+            </div>
+            <button class = "ok-button">Ok</button>
+        </div>
+    </div>
+
+    <div class="form-container">
+        <form name = 'myForm' onsubmit="return false">
+            <div class="book-name-div container">
+                <span class = 'book-name-label'>Book Name</span>
+                <input type="text" name = "bookName">
+                <div class="validation"></div>
+            </div>
+            
+            <div class="price-div container">
+                <span class = 'price-label'>Price</span>
+                <input type="text" name = "price">
+                <div class="validation"></div>
+            </div>
+            
+            <div class="author-name-div container">
+                <span class = 'author-name-label'>Author Name</span>
+                <input type="text" name = "authorName">
+                <div class="validation">  </div>
+            </div>
+            
+            <div class="author-email-div container">
+                <span class = 'author-email-label'>Author Email</span>
+                <input type="text" name = "authorEmail">
+                <div class="validation">  </div>
+            </div>
+            
+            <div class="submit-div container">
+                <button  class = 'submit-button'>Submit</button>
+            </div>
+        </form>
+    </div>
+
+    <div class="books-table">
+        <table>
+            <thead>    
+                    <th>Name</th>
+                    <th>Publish Date</th>
+                    <th>Price</th>
+                    <th>Author Name</th>
+                    <th>Author Email</th>
+                    <th colspan="2"><input type="button" value="Add"></th>
+            </thead>
+        
+        </table>
+    </div>
+
+
+        
+        <script src="app.js"></script>
+        <script src="numberOfBooks.js"></script>
+        <script src="form.js"></script>
+        <script src="dataTable.js"></script>
+    </body>
+    </html>

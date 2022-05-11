@@ -1,0 +1,105 @@
+.number-of-books{
+    height: 80%;
+    width: 90%;
+    display: none; /***/
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+
+.number-of-books-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30%;
+    width: 40%;
+    flex-direction: column;
+    background-color: rgba(255 , 255, 255, 0.3);
+    border-radius: 5px;
+    box-shadow: 2px 2px 25px rgba(0, 0, 0, 0.9);
+    /* backdrop-filter: saturate(180%) blur(10px) */
+
+    
+    
+}
+.text-input{
+    display: flex;
+    height: 40%;
+    width: 80%;
+    justify-content: space-between;
+    align-items: flex-start;
+    /* background-color: red; */
+}
+
+.number-of-books-container  .text-input .text{
+    font-weight: bold;
+    font-size: 20px;
+    
+}
+
+.input-validation{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 40%;
+}
+
+.number-of-books-container .text-input .number-input{
+    outline: none;
+    appearance: none;
+    width: 4rem;
+    height: 2rem;
+    font-size: 25px;
+    text-align:center ;
+    border: 2px solid black;
+    transition: all 1s ;
+    border-radius: 5px ;
+}
+
+
+.number-of-books .ok-button{
+    appearance: none;
+    font-size: 20px;
+    text-align:center ;
+    width: 5.5rem;
+    height: 2.5rem;
+    border-radius: 5px;
+    background-color: black;
+    border: 2px solid white;
+    color: white;
+    font-weight: lighter;
+    transition: all .5s;
+    
+}
+.number-of-books .ok-button.ok-button:hover{
+    background-color: white;
+    color:black;
+}
+
+
+
+
+.number-of-books-container .number-input:focus{
+    
+    outline: none;
+    appearance: none;
+    
+}    
+
+
+.number-of-books-container .number-input::selection{
+    background-color: black;
+    color:white
+}    
+
+
+
+.number-only-validation{
+    color: red;
+    font-weight: bold;
+    font-size: 15px;
+
+}

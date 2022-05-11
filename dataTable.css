@@ -1,0 +1,89 @@
+.books-table{
+    display: none;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top:0%;
+}
+
+.books-table table {
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.5);
+    font-weight: bold;
+}
+
+.books-table table tr {
+    height: 3rem;
+    
+}
+
+.books-table table td {
+    border-radius: 5px;
+    height: 2.5rem;
+    position: relative;
+}
+
+.books-table table td input[type = 'text']{
+    font-weight: bold;
+    appearance: none;
+    outline: none;
+    height: 2rem;
+    background-color: inherit;
+    border: none;
+    font-size: 15px ;
+    
+}
+
+.books-table table td input[type = 'text']:focus{
+    outline:2px solid black;
+}
+
+
+.books-table table td input[disabled]{
+    color: black;
+}
+
+table thead th{
+    border-radius: 5px;
+    color:white;
+    font-size: 14px;
+    border: none;
+    background-color: black;
+    width: 15%;
+}
+
+table tr:nth-child(even){
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+
+td input[type = 'button']{
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50% , -50%);
+
+}
+
+.books-table input[type = 'button'] , .save-cancel-button{
+    display: inline;
+    color: white;
+    background-color: black;
+    font-weight: bold ;
+    border-radius: 5px;
+    width: 3rem;
+    height: 2rem;
+    transition: all 2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+
+.books-table input[type = 'button']:hover , .save-cancel-button:hover{
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+
+
